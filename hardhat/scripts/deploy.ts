@@ -16,7 +16,6 @@ async function main() {
 
   console.log("部署账户:", wallet.address);
 
-  // 读取编译后的 artifact
   const artifactPath = join(__dirname, "../artifacts/contracts/AIJudge.sol/AIJudge.json");
   const artifact = JSON.parse(readFileSync(artifactPath, "utf8"));
 
